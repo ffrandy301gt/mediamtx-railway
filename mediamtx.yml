@@ -1,0 +1,14 @@
+
+server:
+  protocols: [rtmp, hls, webrtc]
+
+rtmp:
+  enabled: yes
+
+hls:
+  enabled: yes
+  alwaysRemux: yes
+  segmentCount: 3
+
+webrtc:
+  enabled: yes
