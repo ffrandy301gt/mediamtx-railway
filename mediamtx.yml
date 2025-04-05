@@ -1,4 +1,5 @@
 server:
+  # Usa el puerto 80 porque Render expone ese puerto para HTTP
   httpAddress: :80
 
 rtmp:
