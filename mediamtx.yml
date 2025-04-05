@@ -1,6 +1,5 @@
-
 server:
-  protocols: [rtmp, hls, webrtc]
+  httpAddress: :80
 
 rtmp:
   enabled: yes
@@ -8,7 +7,13 @@ rtmp:
 hls:
   enabled: yes
   alwaysRemux: yes
-  segmentCount: 3
 
 webrtc:
   enabled: yes
+  iceServers:
+    - urls: [stun:stun.l.google.com:19302]
+
+paths:
+  all:
+    source: publisher
+
